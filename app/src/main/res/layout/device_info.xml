@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_device_info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/main_device_info_img"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/head"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:id="@+id/main_device_info_binding_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/main_device_info_img"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:text="绑定时间" />
+
+            <TextView
+                android:id="@+id/main_device_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/main_device_info_binding_time"
+                android:text="设备名称" />
+
+            <TextView
+                android:id="@+id/main_device_info_type"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_below="@id/main_device_info_binding_time"
+                android:layout_toRightOf="@id/main_device_info_img"
+                android:text="设备型号" />
+
+            <TextView
+                android:id="@+id/main_device_info_set"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/main_device_info_name"
+                android:layout_toRightOf="@id/main_device_info_type"
+                android:text="设备设置" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/main_device_info_charts"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/main_device_info_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:text="温度:xxxx" />
+            <TextView
+                android:id="@+id/main_device_info_pm2.5"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_gravity="right"
+                android:textSize="20sp"
+                android:text="pm2.5:xxx ug" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/main_device_info_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="湿度:xxxx" />
+            <TextView
+                android:id="@+id/main_device_info_pm10"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="pm10:xxxx ug" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/main_device_info_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="查看详情"/>
+</LinearLayout>

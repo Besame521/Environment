@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_marginTop="10dp"
+android:layout_marginLeft="15dp"
+android:layout_marginRight="15dp"
+android:layout_width="match_parent"
+android:layout_height="200dp">
+<LinearLayout
+    android:id="@+id/air_quality"
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+    <TextView
+        android:text="空气质量"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_below="@id/air_quality">
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="13sp"
+            android:text="PM10  213"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="13sp"
+            android:text="PM2.5  71"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="13sp"
+            android:text="NO2  15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="13sp"
+            android:text="SO2  15"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="13sp"
+            android:text="O3  121"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textSize="13sp"
+            android:text="CO  1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

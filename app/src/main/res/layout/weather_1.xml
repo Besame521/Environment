@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <TextView
+            android:id="@+id/this_temperature"
+            android:layout_centerInParent="true"
+            android:text="22℃"
+            android:textSize="40sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/weather"
+            android:layout_below="@id/this_temperature"
+            android:layout_centerHorizontal="true"
+            android:text="晴"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/l_h_temperature"
+            android:layout_below="@id/weather"
+            android:layout_centerHorizontal="true"
+            android:text="28℃/13℃"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pollute"
+            android:layout_below="@id/l_h_temperature"
+            android:layout_centerHorizontal="true"
+            android:text="轻度污染"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/update_time"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:text="轻度污染"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
